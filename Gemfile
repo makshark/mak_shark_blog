@@ -13,7 +13,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'will_paginate-bootstrap'
+gem 'bootstrap-sass', '3.2.0.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
@@ -27,7 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'activemerchant', '~> 1.31'
-gem 'haml', '~> 4.0'
+gem 'haml-rails'
 gem 'kaminari', '~> 0.14'
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -43,7 +44,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+  # gem 'spring'
 
   #RSpec gem (framework for testing)
   gem 'rspec-rails'
@@ -53,5 +54,8 @@ group :development, :test do
   gem 'ffaker'
   #Gem for cleaning data from database
   gem 'database_cleaner'
+  #Better error advance gem
+  gem 'binding_of_caller'
+  gem 'better_errors'
 end
 

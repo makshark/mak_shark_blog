@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
   <title>MakSharkBlog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+<%= render 'layouts/header' %>
+<section id="content-region-3" class="padding-40 page-tree-bg">
+  <div class="container">
+    <h3 class="page-tree-text">
+      <%= get_main_title %>
+    </h3>
+  </div>
+</section>
+<!--page-tree end here-->
+<div class="space-70"></div>
+<div class="container">
+  <div class="row">
+    <%= yield %>
+  </div>
+</div>
+<div class="space-70"></div>
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
