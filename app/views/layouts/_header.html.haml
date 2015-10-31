@@ -1,0 +1,24 @@
+%header.header-main
+  .navbar.navbar-default{:role => "navigation"}
+    .container
+      .navbar-header
+        %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{:href => root_path}
+          %img.img-responsive{:alt => "", :src => "../assets/logo-dark.png"}/
+      .navbar-collapse.collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li
+            %a{:href => articles_path} Блог
+          %li
+            %a{:href => about_me_path} Обо мне
+          %li.social-nav
+            %a{:href => "#"}
+              %i.ion-social-facebook
+          %li.social-nav
+            %a{:href => "#"}
+              %i.ion-social-twitter
+          %li.social-nav
