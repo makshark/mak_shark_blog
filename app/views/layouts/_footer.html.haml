@@ -1,0 +1,53 @@
+#footer
+  .container
+    .row
+      .col-md-4.margin-btm-20
+        .footer-col
+          %h3 контактная информация
+          %p
+            %i.ion-home
+            Украина, Харьков
+          %p
+            %i.ion-email
+            vitalii.makovskyi@gmail.com
+        .space-20
+        .footer-col
+          %h3 Follow me
+          %ul.list-inline.social-btn
+            %li
+              %a{:href => "#"}
+                %i.ion-social-facebook{"data-original-title" => "Like On Facebook", "data-placement" => "top", "data-toggle" => "tooltip", :title => ""}
+            %li
+              %a{:href => "#"}
+                %i.ion-social-twitter{"data-original-title" => "Follow On twitter", "data-placement" => "top", "data-toggle" => "tooltip", :title => ""}
+            %li
+              %a{:href => "#"}
+                %i.ion-social-skype{"data-original-title" => "skype", "data-placement" => "top", "data-toggle" => "tooltip", :title => ""}
+      .col-md-3.margin-btm-20
+        .footer-col
+          %h3 Последние записи
+          %ul.post-list.list-unstyled
+            %li
+              %a.hover-color{:href => "#"} Создание и старт нового блога
+      .col-md-5
+        .footer-col
+          %h3 Напишите мне
+          %form
+            .row
+              .col-md-6
+                %input.form-control{:placeholder => "Имя...", :type => "text"}
+              .col-md-6
+                %input.form-control{:placeholder => "Email...", :type => "email"}
+              .col-md-12
+                %input.form-control{:placeholder => "Тема...", :type => "text"}
+              .col-md-12
+                %textarea.form-control{:placeholder => "Сообщение...", :rows => "7"}
+              .col-md-12.text-right
+                %button.btn.btn-lg.btn-white{:type => "submit"} Отправить сообщение
+    .space-70
+    .row
+      .col-md-12.text-center.footer-bottom
+        %a{:href => "index.html"}
+          %img{:alt => "", :src => "../assets/logo-dark.png"}/
+        .space-20
+        %span &copy;2015.all right resrved. Mak Shark

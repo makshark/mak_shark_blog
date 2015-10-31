@@ -1,0 +1,101 @@
+
+- @articles.each do |article|
+  .container
+    .row
+      .col-md-8
+        .blog-post-section
+          -#.blog-post-img
+          -#  %img.img-responsive{:alt => "", :src => "assets/blog/blog-1.jpg"}
+          .blog-post-header
+            %h3
+              %a.hover-color{:href => ""}= article.title
+          .blog-post-info
+            %span
+              %a.hover-color{:href => "#"} by author
+              | on 27 may 2014 |
+              %a.hover-color{:href => "#"} Sports
+              |
+              %a.hover-color{:href => "#"} 0 comment
+          .blog-post-detail
+            %p
+              = truncate(strip_tags(article.description), length: 200)
+          .blog-post-more.text-right
+            %a.btn.theme-btn-default.btn-lg{:href => ""} читать дальше
+        .space-40
+        .row
+          .col-md-12
+            %ul.pagination
+              %li
+                %a{:href => "#"} &laquo;
+              %li
+                %a{:href => "#"} 1
+              %li
+                %a{:href => "#"} 2
+              %li
+                %a{:href => "#"} 3
+              %li
+                %a{:href => "#"} 4
+              %li
+                %a{:href => "#"} 5
+              %li
+                %a{:href => "#"} &raquo;
+      .col-md-4
+        .sidebar-box
+          .widget-search
+            %form.search-form
+              %input.form-control{:placeholder => "поиск...", :type => "text"}
+                %i.ion-search{"data-original-title" => "hit enter to search", "data-placement" => "top", "data-toggle" => "tooltip", :title => ""}
+        %hr
+          .sidebar-box
+            %h4 разделы
+            %ul.cat-list
+              %li
+                %a.hover-color{"data-original-title" => "10", "data-placement" => "right", "data-toggle" => "tooltip", :href => "#", :title => ""} Sports
+              %li
+                %a.hover-color{"data-original-title" => "6", "data-placement" => "right", "data-toggle" => "tooltip", :href => "#", :title => ""} Management
+              %li
+                %a.hover-color{"data-original-title" => "8", "data-placement" => "right", "data-toggle" => "tooltip", :href => "#", :title => ""} Music
+              %li
+                %a.hover-color{"data-original-title" => "14", "data-placement" => "right", "data-toggle" => "tooltip", :href => "#", :title => ""} Product
+          %hr
+            .sidebar-box
+              %h4 случайная цитата
+              %p
+                тут текст цитаты тут текст цитаты тут текст цитаты тут текст цитаты тут текст цитаты
+            %hr
+              .sidebar-box
+                %h4 недавние записи
+                .recent
+                  %span
+                    %img.img-responsive{:alt => "", :src => "assets/blog/blog-1.jpg"}
+                  %p
+                    %a.hover-color{:href => "#"} There are many  embarrassing hidden in the middle of text.
+                  %span.recent-date On 27 may in office.
+                .recent
+                  %span
+                    %img.img-responsive{:alt => "", :src => "assets/blog/blog-2.jpg"}
+                  %p
+                    %a.hover-color{:href => "#"} There are many  embarrassing hidden in the middle of text.
+                  %span.recent-date On 27 may in office.
+                .recent
+                  %span
+                    %img.img-responsive{:alt => "", :src => "assets/blog/blog-3.jpg"}
+                  %p
+                    %a.hover-color{:href => "#"} There are many  embarrassing hidden in the middle of text.
+                  %span.recent-date On 27 may in office.
+              .clearfix
+              %hr
+                .sidebar-box
+                  %h4 Follow me
+                  %ul.list-inline.social-btn
+                    %li
+                      %a{:href => "#"}
+                        %i.ion-social-facebook{"data-original-title" => "Like On Facebook", "data-placement" => "top", "data-toggle" => "tooltip", :title => ""}
+                    %li
+                      %a{:href => "#"}
+                        %i.ion-social-twitter{"data-original-title" => "Follow On twitter", "data-placement" => "top", "data-toggle" => "tooltip", :title => ""}
+                    %li
+                      %a{:href => "#"}
+                        %i.ion-social-skype{"data-original-title" => "skype", "data-placement" => "top", "data-toggle" => "tooltip", :title => ""}
+                %hr
+
